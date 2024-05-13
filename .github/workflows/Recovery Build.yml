@@ -18,7 +18,7 @@ on:
       DEVICE_PATH:
         description: Path the device tree should be synced to, relative to source root
         required: true
-        default: device/oneplus/sm86xx-common
+        default: device/oneplus/waffle
       DEVICE_MAKEFILE:
         description: 'Name of device-specific makefile from tree (format: <PREFIX>_<DEVICE_NAME>)'
         required: true
