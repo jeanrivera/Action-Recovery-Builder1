@@ -6,43 +6,43 @@ on:
       MANIFEST_URL:
         description: 'MANIFEST_URL (if want to use SSH keys, use git@github.com:XXXXX)'
         required: true
-        default: 'https://github.com/PitchBlackRecoveryProject/manifest_pb'
+        default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni'
       MANIFEST_BRANCH:
         description: 'MANIFEST_BRANCH'
         required: true
-        default: 'android-12.1'
+        default: 'twrp-9.0'
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/snowwolf725/device_oneplus_waffle-TWRP'
+        default: 'https://github.com/jeanrivera/android_device_alps_ac8257_demo'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'android-12.1'
+        default: 'UJC201-M0-V1.0.09R5-240523_1418'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/oneplus/waffle'
+        default: 'device/alps/ac8257_demo'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
-        required: true
+        required: false
         default: 'https://github.com/nebrassy/device_oneplus_sm86xx-common-TWRP'
       COMMON_PATH:
         description: 'COMMON_PATH (if no common tree, leave blank)'
-        required: true
+        required: false
         default: 'device/oneplus/sm86xx-common'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'waffle'
+        default: 'ac8257_demo'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_waffle'
+        default: 'omni_ac8257_demo.mk'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'recovery'
+        default: 'recoveryimage'
 
 jobs:
   build:
